@@ -26,10 +26,19 @@ let persons = [
     }
   ]
 
-app.get('/', (req, res) => {
-    res.send(
+app.get('/', (request, response) => {
+    response.send(
         '<p>This is a simple JSON server for a phonebook. See list of persons '
         + 'in the phonebook <a href="/api/persons">here</a>.</p>'
+    )
+})
+
+app.get('/info', (request, response) => {
+    const numOfPersons = persons.length
+    const date = new Date()
+    response.send(
+        `<p>Phonebook contains information about ${numOfPersons} persons</p>\n`
+        + `<p>${date}</p>`
     )
 })
 
