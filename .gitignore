@@ -102,8 +102,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Fly.io
-.dockerignore
-Dockerfile
-fly.toml
