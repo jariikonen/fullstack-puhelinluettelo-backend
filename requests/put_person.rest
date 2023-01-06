@@ -1,0 +1,10 @@
+//@host = https://falling-bush-8725.fly.dev/api/persons
+@host = http://localhost:3001/api/persons
+@id = 63b7bae55115f7ebeef4a84b
+
+PUT {{host}}/{{id}} HTTP/1.1
+content-type: application/json
+
+{
+    "number": "555-123456"
+}
