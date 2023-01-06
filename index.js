@@ -64,10 +64,11 @@ app.get('/info', (request, response) => {
   })
 })
 
-app.get('/api/persons', (request, response) => {
+app.get('/api/persons', (request, response, next) => {
   Person.find({}).then(people => {
     response.json(people)
   })
+  .catch(error => next(error))
 })
 
 app.get('/api/persons/:id', (request, response, next) => {
