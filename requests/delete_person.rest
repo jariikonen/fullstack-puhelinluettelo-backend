@@ -1,5 +1,8 @@
-DELETE http://localhost:3001/api/persons/3 HTTP/1.1
+//@host = https://falling-bush-8725.fly.dev/api/persons
+@host = http://localhost:3001/api/persons
+
+DELETE {{host}}/3 HTTP/1.1
 
 ###
 
-DELETE https://falling-bush-8725.fly.dev/api/persons/3 HTTP/1.1
+DELETE {{host}}/5c41c90e84d891c15dfa3431 HTTP/1.1

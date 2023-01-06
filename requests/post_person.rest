@@ -1,4 +1,5 @@
-@host = https://falling-bush-8725.fly.dev/api/persons
+//@host = https://falling-bush-8725.fly.dev/api/persons
+@host = http://localhost:3001/api/persons
 
 POST {{host}} HTTP/1.1
 content-type: application/json
